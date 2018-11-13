@@ -1,0 +1,9 @@
+version: '2'
+services:
+  frontend:
+    container_name: avisi_bemit
+    build: .docker/avisi_bemit/
+    volumes:
+      - ./:/var/www
+    ports:
+      - 3000:3000
